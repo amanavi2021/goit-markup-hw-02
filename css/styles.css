@@ -4,14 +4,15 @@
     --accent-color: #2196F3;
     --bg-color: #2F303A;
     --main-title-color: #FFFFFF;
-    --team-bg-color:#F5F4FA;
+    --team-bg-color: #F5F4FA;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     color: var(--main-color);
-    background-color: #F5F5F5;
-    
+    background-color: var(--main-title-color);
 }
 
 .list {
@@ -27,7 +28,6 @@ body {
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-color);
 }
 
@@ -46,15 +46,15 @@ body {
 }
 
 /* Шапка */
-.header{
+.header {
     background-color: var(--main-title-color);
 }
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
-    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
@@ -64,23 +64,21 @@ body {
 
 .header-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
 }
 
-.header-link.nav{
-color: var(--title-color);
+.header-link.nav {
+    color: var(--title-color);
 }
 
 .header-link.contact {
-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .header-link:hover,
 .header-link:focus,
-.header-link.current
-{
+.header-link.current {
     color: var(--accent-color);
 }
 
@@ -99,19 +97,20 @@ color: var(--main-color);
     text-transform: uppercase;
     color: var(--main-title-color);
 }
-.button{
+
+.button {
     font-family: inherit;
-font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.06em;
     cursor: pointer;
     color: var(--main-title-color);
-    background-color:var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .button:hover,
-.button:focus{
+.button:focus {
     color: var(--accent-color);
     background-color: var(--main-title-color);
 }
@@ -121,36 +120,33 @@ font-weight: 700;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
 }
 
 .qualities-text {
-    font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
 }
 
 /* Наша команда */
 .team {
-    background-color:var(--team-bg-color);
+    background-color: var(--team-bg-color);
 }
-.team-item{
+
+.team-item {
     background-color: var(--main-title-color);
 }
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
-    letter-spacing: 0.03em;
     color: var(--title-color);
 }
 
-.team-text{
+.team-text {
     font-size: 16px;
-    line-height: calc(19/16);  
-    letter-spacing: 0.03em;
+    line-height: calc(19/16);
 }
 
 /* Підвал */
@@ -163,10 +159,7 @@ font-weight: 700;
 }
 
 .footer-link {
-    /* font-weight: 400; */
-    font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -181,25 +174,31 @@ font-weight: 700;
 }
 
 /* Стилі portfolio.html */
-.filter{
+.filter {
     font-family: inherit;
     font-weight: 500;
-        font-size: 16px;
-        line-height: calc(26/16);
-        letter-spacing: 0.03em;
-    cursor:pointer;
+    font-size: 16px;
+    line-height: calc(26/16);
+    cursor: pointer;
     background-color: var(--team-bg-color);
-    color:var(--title-color);
+    color: var(--title-color);
 
 }
-.fiter:hover,
-.filter:focus{
-    background-color:var(--accent-color);
-        color: var(--main-title-color);
+
+.filter:hover,
+.filter:focus {
+    background-color: var(--accent-color);
+    color: var(--main-title-color);
 }
-.portfolio-item{
-    background-color:var(--main-title-color);
+
+.portfolio-item {
+    background-color: var(--main-title-color);
 }
+
+.portfolio-link {
+    color: var(--main-color);
+}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
@@ -211,5 +210,4 @@ font-weight: 700;
 .portfolio-text {
     font-size: 16px;
     line-height: calc(30/16);
-    letter-spacing: 0.03em;
 }
